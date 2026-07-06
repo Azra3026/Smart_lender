@@ -1,3 +1,7 @@
+import matplotlib.pyplot as plt
+ 
+import seaborn as sns
+
 # plotting using histplot instead of distplot
 plt.figure(figsize=(12, 5))
 
@@ -6,5 +10,7 @@ sns.histplot(data['ApplicantIncome'], color='r', kde=True)
 
 plt.subplot(122)
 sns.histplot(data['Credit_History'], kde=True)
+
+df = pd.read_csv('your_dataset.csv') 
 
 plt.show()
